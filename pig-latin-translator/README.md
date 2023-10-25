@@ -6,10 +6,13 @@ By Henry Oberholtzer & Ravin Fisher
 
 #### Describe pigLatin()
 
+#### vowelSpotter()
 Test: "It will recognize a vowel at the start of a word and add 'way' at the end"
 Code: pigLatin("e")
 Expected Output: "eway"
 
+
+#### conSpotter()
 Test: "It will a recognize single consonant, move to end of word and add "ay"
 Code: pigLatin("car")
 Expected Output: "arcay"
@@ -25,8 +28,6 @@ Expected Output: "eenquay"
 Test: "It will break a consonant chain if it encounters 'qu' not at the start of a word, and move the consonants to the end."
 Code: pigLatin("squalor")
 Expected Output: "qualorsay"
-
-Test: "It will re
 
 Test: "It will return a sentence in pigLatin"
 Code: pigLatin("Hello queen, you live in squalor. This isn't a schtick.")
