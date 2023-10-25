@@ -9,7 +9,11 @@ function vowelSpotter(word) {
 };
 
 function conSpotter(word) {
-    const firstLetter = word.slice(0,1);
-    const restLetter = word.slice(1);
-    return restLetter + firstLetter +"ay";
+    for (i = 0; i < word.length; i++) {
+        if(vowelArray.includes(word.charAt(i))) {
+            const firstLetters = word.slice(0,i);
+            const restLetters = word.slice(i);
+            return restLetters + firstLetters +"ay";
+        }
+    }
 }
