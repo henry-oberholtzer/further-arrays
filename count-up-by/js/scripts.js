@@ -17,9 +17,10 @@ window.addEventListener("load", function () {
     const form = document.querySelector("form")
     form.addEventListener("submit", function(e){
         e.preventDefault();
+        const outputDiv = document.getElementById("outputDiv");
+        outputDiv.innerText = null;
         const countTo = parseInt(document.getElementById("countTo").value);
         const countBy = parseInt(document.getElementById("countBy").value);
-        const outputDiv = document.getElementById("outputDiv");
         outputDiv.append(countString(countTo, countBy));
     });
 });
