@@ -1,4 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    background-color: rgb(246, 213, 218);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+}
+
 button {
-    background-color: pink;
+    background-color: darksalmon;
     color: purple;
+    margin: 10px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+
+button:hover {
+    background-color: rgb(172, 112, 92);
+    color: rgb(70, 0, 70);
+    cursor: pointer
 }
