@@ -1,3 +1,5 @@
+// Business Logic
+
 function vowelSpotter(word) {
     const vowelArray = ["a", "e", "i", "o", "u"];
     if (vowelArray.includes(word.charAt(0))) {
@@ -29,3 +31,20 @@ function pigLatin(text) {
     })
     return pigText.trim();
 };
+
+// UI Logic
+
+function handleFormSubmission(e) {
+    e.preventDefault();
+    const text = document.getElementById("whatToSay").value;
+    const result = document.getElementById("result");
+    const p = document.createElement("p");
+    const pigLatinText = pigLatin(text);
+    p.append(pigLatinText);
+    result.append(p);
+}
+
+window.addEventListener("load", function() {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", handleFormSubmission);
+});
