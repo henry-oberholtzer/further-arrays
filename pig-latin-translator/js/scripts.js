@@ -1,5 +1,3 @@
-
-
 function vowelSpotter(word) {
     const vowelArray = ["a", "e", "i", "o", "u"];
     if (vowelArray.includes(word.charAt(0))) {
@@ -22,3 +20,12 @@ function conSpotter(word) {
         }
     }
 }
+
+function pigLatin(text) {
+    const textArray = text.split(" ");
+    let pigText = "";
+    textArray.forEach(function(word) {
+        pigText = pigText + vowelSpotter(word) + " ";
+    })
+    return pigText.trim();
+};

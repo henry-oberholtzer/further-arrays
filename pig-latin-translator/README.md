@@ -4,15 +4,14 @@ By Henry Oberholtzer & Ravin Fisher
 
 ## Tests
 
-#### Describe pigLatin()
+#### Describe: vowelSpotter()
 
-#### vowelSpotter()
 Test: "It will recognize a vowel at the start of a word and add 'way' at the end"
 Code: pigLatin("e")
 Expected Output: "eway"
 
+#### Describe: conSpotter()
 
-#### conSpotter()
 Test: "It will a recognize single consonant, move to end of word and add "ay"
 Code: pigLatin("car")
 Expected Output: "arcay"
@@ -29,6 +28,8 @@ Test: "It will break a consonant chain if it encounters 'qu' not at the start of
 Code: pigLatin("squalor")
 Expected Output: "qualorsay"
 
-Test: "It will return a sentence in pigLatin"
-Code: pigLatin("Hello queen, you live in squalor. This isn't a schtick.")
-Expected Output: "ellohay eenquay, ouyay ivelay inway qualorsay. Isthey isn'tway away ickschtay.
+#### Describe: pigLatin()
+
+Test: "It will return a string of words in pigLatin"
+Code: pigLatin("hello queen you live in squalor this is not a schtick")
+Expected Output: "ellohay eenquay ouyay ivelay inway qualorsay isthey isway otnay away ickschtay"
